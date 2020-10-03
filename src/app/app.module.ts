@@ -7,6 +7,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { ProduitComponent } from './produit/produit.component';
 import { ContentComponent } from './content/content.component';
+import { DashbordComponent } from './dashbord/dashbord.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +15,14 @@ import { ContentComponent } from './content/content.component';
     NavBarComponent,
     SideBarComponent,
     ProduitComponent,
-    ContentComponent
+    ContentComponent,
+    DashbordComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ProduitComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
